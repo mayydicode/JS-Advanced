@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: rgb(255, 0, 43);
+  font-weight: 700;
+  font-size: 30px;
+}
