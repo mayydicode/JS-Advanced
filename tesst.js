@@ -63,3 +63,4 @@ function getTodos() {
 }
 
 getTodos(callback);
+// Promiese
