@@ -32,14 +32,14 @@
 
 // -- Callback Functions VD thêm--
 
-const callback = (error, data) => {
-  if (error) {
-    console.log(">> calling callback with error: ", error);
-  }
-  if (data) {
-    console.log(">> calling callback with data: ", data);
-  }
-};
+// const callback = (error, data) => {
+//   if (error) {
+//     console.log(">> calling callback with error: ", error);
+//   }
+//   if (data) {
+//     console.log(">> calling callback with data: ", data);
+//   }
+// };
 
 function getTodos() {
   let request = new XMLHttpRequest();
@@ -62,5 +62,27 @@ function getTodos() {
   request.send();
 }
 
-getTodos(callback);
+// getTodos(callback);
 // Promiese
+
+//>>>> Fetch API
+
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((Response) => {
+//     return Response.json();
+//   })
+//   .then((data) => {
+//     // console.log(">>> check fetch data :", data);
+//   });
+
+//>>> async & await
+const getNewtodo = async (id) => {
+  let response = await fetch(
+    `https://jsonplaceholder.typicode.com/todos/${id}`
+  );
+  let data = await response.json();
+  return data;
+};
+getNewtodo(2).then((data) => {
+  console.log("check :", data);
+});
