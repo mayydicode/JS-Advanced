@@ -86,3 +86,9 @@ const getNewtodo = async (id) => {
 getNewtodo(2).then((data) => {
   console.log("check :", data);
 });
+
+// Thêm event listener để bắt sự kiện click và thực hiện hành động khi click vào button
+let button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  alert("kích con chim non");
+});
