@@ -75,20 +75,26 @@ function getTodos() {
 //     // console.log(">>> check fetch data :", data);
 //   });
 
-//>>> async & await
-const getNewtodo = async (id) => {
-  let response = await fetch(
-    `https://jsonplaceholder.typicode.com/todos/${id}`
-  );
-  let data = await response.json();
-  return data;
-};
-getNewtodo(2).then((data) => {
-  console.log("check :", data);
-});
+// //>>> async & await
+// const getNewtodo = async (id) => {
+//   let response = await fetch(
+//     `https://jsonplaceholder.typicode.com/todos/${id}`
+//   );
+//   let data = await response.json();
+//   return data;
+// };
+// getNewtodo(2).then((data) => {
+//   console.log("check :", data);
+// });
 
 // Thêm event listener để bắt sự kiện click và thực hiện hành động khi click vào button
 let button = document.getElementById("myButton");
 button.addEventListener("click", function () {
-  alert("kích con chim non");
+  // alert(" con chim non");
+  console.log("data:", data);
 });
+
+// JS tu hoc
+
+let data = prompt("nhap data");
+console.log("Du lieu data : ", data);

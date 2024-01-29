@@ -7,10 +7,28 @@
 body {
   padding: 20px;
   margin-bottom: 20px;
+  width: 1200px;
+  height: 150px;
+  display: flex;
 }
 
-p {
-  color: rgb(0, 238, 255);
-  font-weight: 700;
-  font-size: 30px;
+#myButton {
+  margin-top: 100px;
+  padding: 20px;
+  color: #fff;
+  background-color: cadetblue;
+  border-radius: 13px;
+  border: none;
+  margin-left: 50%;
+  border: solid 1px blue;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+}
+
+#myButton:hover {
+  color: black;
+  background-color: bisque;
+  border: solid 1px black;
 }
