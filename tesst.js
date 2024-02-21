@@ -96,5 +96,47 @@ button.addEventListener("click", function () {
 
 // JS tu hoc
 
-let data = prompt("nhap data");
-console.log("Du lieu data : ", data);
+// let data = prompt("nhap data");
+// console.log("Du lieu data : ", data);
+// console.log("Du lieu data : ", typeof "data");
+
+//lam tron sau dau cham toFixed()
+// let dtb = 1.982359852378795432;
+// console.log(dtb.toFixed(2));
+
+//Tinh chu vi dien tich hinh tron
+// let r = Number(prompt("nhap ban kinh:"));
+// console.log(r);
+// console.log(typeof r);
+
+// let Pi = Math.PI;
+// let chuVi = 2 * Pi * r;
+// let dienTich = Pi * r * r;
+
+// console.log(chuVi);
+// console.log(dienTich);
+
+// Tinh chu vi dien tich hcn
+// let a = Number(prompt("nhap chieu dai:"));
+// let b = Number(prompt("nhap chieu rong:"));
+
+// let chuVihcn = (a + b) * 2;
+// let dienTichhcn = a * b;
+
+// console.log("chu vi:", chuVihcn);
+// console.log("dien tich:", dienTichhcn);
+
+//Nhap diem 3 mon-> TB lam tron 2 chu so
+
+let a = Number(prompt("Mon Toan:"));
+let b = Number(prompt("Mon Van:"));
+let c = Number(prompt("Mon Anh:"));
+
+let dtb = (a + b + c) / 3;
+console.log("Diem trung binh la:", dtb.toFixed(2));
+
+if (dtb > 8) {
+  console.log("hoc sinh kha");
+} else {
+  console.log("hoc sinh TB");
+}
