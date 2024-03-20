@@ -88,11 +88,11 @@ function getTodos() {
 // });
 
 // Thêm event listener để bắt sự kiện click và thực hiện hành động khi click vào button
-let button = document.getElementById("myButton");
-button.addEventListener("click", function () {
-  // alert(" con chim non");
-  console.log("data:", data);
-});
+// let button = document.getElementById("myButton");
+// button.addEventListener("click", function () {
+//   // alert(" con chim non");
+//   console.log("data:", data);
+// });
 
 // JS tu hoc
 
@@ -128,15 +128,41 @@ button.addEventListener("click", function () {
 
 //Nhap diem 3 mon-> TB lam tron 2 chu so
 
-let a = Number(prompt("Mon Toan:"));
-let b = Number(prompt("Mon Van:"));
-let c = Number(prompt("Mon Anh:"));
+// let a = Number(prompt("Mon Toan:"));
+// let b = Number(prompt("Mon Van:"));
+// let c = Number(prompt("Mon Anh:"));
 
-let dtb = (a + b + c) / 3;
-console.log("Diem trung binh la:", dtb.toFixed(2));
+// let dtb = (a + b + c) / 3;
+// console.log("Diem trung binh la:", dtb.toFixed(2));
 
-if (dtb > 8) {
-  console.log("hoc sinh kha");
-} else {
-  console.log("hoc sinh TB");
-}
+// if (dtb > 6.5) {
+//   console.log("hoc sinh kha");
+//   alert("hs kha");
+// } else if (dtb < 3) {
+//   // console.log("hoc sinh TB");
+//   alert("hs tb");
+// }
+
+// let x = parseInt(Math.random() * 10);
+// console.log(x);
+
+// bai toan TB
+
+// let dtb = Number(prompt("Mon Toan:"));
+// if (dtb <= 10 && dtb >= 8) {
+//   console.log("hs gioi");
+// } else if (dtb < 8 && dtb >= 6.5) {
+//   console.log("HS KHA");
+// } else if (dtb <= 6.5 && dtb > 5) {
+//   console.log("hs tb");
+// } else if (dtb < 5 && dtb > 0) console.log("hs yeu");
+// else {
+//   console.log("m bi duoi hoc");
+// }
+
+// toan tu 3 ngoi
+
+let dtb = parseFloat(prompt("moi ban nhap diem"));
+
+let HL = dtb >= 8 ? "gioi" : dtb > 6.5 ? "kha" : dtb <= 5 ? "tb" : "yeu";
+console.log("Hoc luc cua ban la :", HL);
